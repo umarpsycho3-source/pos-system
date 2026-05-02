@@ -36,7 +36,7 @@ export default function Login() {
 
         <form onSubmit={handleLogin} className="login-form">
           <div className="input-group">
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <div className="input-wrapper">
               <Store size={16} className="text-secondary" />
               <input
                 type="text"
@@ -50,13 +50,16 @@ export default function Login() {
           </div>
 
           <div className="input-group">
-            <input
-              type="password"
-              className="login-input"
-              placeholder="PIN"
-              value={pin}
-              onChange={(e) => setPin(e.target.value)}
-            />
+            <div className="input-wrapper">
+              <Lock size={16} className="text-secondary" />
+              <input
+                type="password"
+                className="login-input"
+                placeholder="PIN"
+                value={pin}
+                onChange={(e) => setPin(e.target.value)}
+              />
+            </div>
           </div>
 
           {(localError || error) && <p className="text-danger mt-2">{localError || error}</p>}
