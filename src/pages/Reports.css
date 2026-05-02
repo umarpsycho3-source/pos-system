@@ -1,0 +1,38 @@
+.reports-filters {
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.reports-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.return-row {
+  background: rgba(245, 158, 11, 0.06);
+}
+
+.return-item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.return-item-name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

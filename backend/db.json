@@ -1,0 +1,235 @@
+{
+  "shops": [
+    {
+      "id": "id-1777717700382-md1usv",
+      "code": "SHOID04",
+      "name": "print",
+      "pinHash": "$2b$10$PQz7ULa7MmiJ5RMWMWu/UuaTkijWhhH1j26spvFQAEOfkkFYH2rGa",
+      "status": "active"
+    },
+    {
+      "id": "id-1777717547016-vaebv0",
+      "code": "SHOID03",
+      "name": "NovaWeb",
+      "pinHash": "$2b$10$m8Nv/3XXII6/R5yxOj06ZOzooA28y/x9aDvj1BhMseTZaPJjDc3ju",
+      "status": "active"
+    },
+    {
+      "id": "id-1777715720022-o5rfud",
+      "code": "SHOID02",
+      "name": "I Print Hub",
+      "pinHash": "$2b$10$v0FYAZHyBbPXU8cll7hO8u4n7LBM1QCFqCfTWGhD3KHKmRtRE8Ku.",
+      "status": "active"
+    },
+    {
+      "id": "shop-demo",
+      "code": "DEMO",
+      "name": "My Retail Shop",
+      "pinHash": "$2b$10$xBUQiE9dig8tiPgExO0/l.5MJ3354R2RaHu5zGiUdhZRx9i7pnQsy",
+      "status": "active"
+    }
+  ],
+  "records": {
+    "shop-demo": {
+      "products": [
+        {
+          "id": "id-1777714377617-1ai1wb",
+          "name": "A4",
+          "category": "General",
+          "price": 10,
+          "cost": 5,
+          "stock": 1000,
+          "barcode": "1234567890",
+          "shopId": "shop-demo"
+        },
+        {
+          "id": "id-1777707031681-oo6d6c",
+          "name": "Tenant Test",
+          "barcode": "TEN-1",
+          "price": 10,
+          "cost": 5,
+          "stock": 3,
+          "category": "General",
+          "shopId": "shop-demo"
+        }
+      ],
+      "customers": [
+        {
+          "id": "id-1777707161737-xlaal6",
+          "name": "AYAAN",
+          "phone": "075352",
+          "email": "umarpsycho3@gmail.com",
+          "points": 0,
+          "shopId": "shop-demo"
+        }
+      ],
+      "employees": [
+        {
+          "id": "id-1777707202141-bogu82",
+          "name": "Umar",
+          "role": "Cashier",
+          "status": "Active",
+          "shopId": "shop-demo"
+        }
+      ],
+      "sales": [
+        {
+          "id": "id-1777718499432-jxnkvz",
+          "total": 100,
+          "profit": 100,
+          "method": "Cash",
+          "customerId": null,
+          "items": [
+            {
+              "id": "custom-1777718489515",
+              "name": "A4",
+              "category": "Custom",
+              "price": 100,
+              "cost": 0,
+              "stock": 0,
+              "barcode": "*100*A4*",
+              "qty": 1,
+              "discount": 0
+            }
+          ],
+          "createdAt": "2026-05-02T10:41:39.432Z",
+          "shopId": "shop-demo"
+        },
+        {
+          "id": "id-1777714588049-4oglr2",
+          "type": "Return",
+          "originalSaleId": "id-1777714502743-gl2xwe",
+          "total": -100,
+          "profit": -50,
+          "method": "Return",
+          "customerId": null,
+          "items": [
+            {
+              "id": "id-1777714377617-1ai1wb",
+              "name": "A4",
+              "category": "General",
+              "price": 10,
+              "cost": 5,
+              "stock": 1000,
+              "barcode": "1234567890",
+              "shopId": "shop-demo",
+              "qty": 10,
+              "discount": 0
+            }
+          ],
+          "createdAt": "2026-05-02T09:36:28.049Z"
+        },
+        {
+          "id": "id-1777714502743-gl2xwe",
+          "total": 200,
+          "profit": 100,
+          "method": "Cash",
+          "customerId": null,
+          "items": [
+            {
+              "id": "id-1777714377617-1ai1wb",
+              "name": "A4",
+              "category": "General",
+              "price": 10,
+              "cost": 5,
+              "stock": 1000,
+              "barcode": "1234567890",
+              "shopId": "shop-demo",
+              "qty": 20,
+              "discount": 0
+            }
+          ],
+          "createdAt": "2026-05-02T09:35:02.743Z",
+          "shopId": "shop-demo",
+          "status": "Partially Returned",
+          "returnedAt": "2026-05-02T09:36:28.049Z",
+          "returnedTotal": 100
+        },
+        {
+          "id": "id-1777714445736-6nh14q",
+          "total": 10,
+          "profit": 5,
+          "method": "Cash",
+          "customerId": null,
+          "items": [
+            {
+              "id": "id-1777714377617-1ai1wb",
+              "name": "A4",
+              "category": "General",
+              "price": 10,
+              "cost": 5,
+              "stock": 1000,
+              "barcode": "1234567890",
+              "shopId": "shop-demo",
+              "qty": 1,
+              "discount": 0
+            }
+          ],
+          "createdAt": "2026-05-02T09:34:05.736Z",
+          "shopId": "shop-demo"
+        }
+      ],
+      "creditSales": [
+        {
+          "id": "id-1777707163546-l18xgm",
+          "customerId": "id-1777707161737-xlaal6",
+          "items": [
+            {
+              "id": "id-1777707031681-oo6d6c",
+              "name": "Tenant Test",
+              "barcode": "TEN-1",
+              "price": 10,
+              "cost": 5,
+              "stock": 3,
+              "category": "General",
+              "shopId": "shop-demo",
+              "qty": 1,
+              "discount": 0
+            }
+          ],
+          "total": 10,
+          "createdAt": "2026-05-02T07:32:43.478Z",
+          "status": "Unpaid",
+          "shopId": "shop-demo"
+        }
+      ],
+      "settings": {
+        "currency": "LKR ",
+        "shopName": "My Retail Shop"
+      }
+    },
+    "id-1777715720022-o5rfud": {
+      "products": [],
+      "customers": [],
+      "employees": [],
+      "sales": [],
+      "creditSales": [],
+      "settings": {
+        "currency": "LKR ",
+        "shopName": "I Print Hub"
+      }
+    },
+    "id-1777717547016-vaebv0": {
+      "products": [],
+      "customers": [],
+      "employees": [],
+      "sales": [],
+      "creditSales": [],
+      "settings": {
+        "currency": "LKR ",
+        "shopName": "NovaWeb"
+      }
+    },
+    "id-1777717700382-md1usv": {
+      "products": [],
+      "customers": [],
+      "employees": [],
+      "sales": [],
+      "creditSales": [],
+      "settings": {
+        "currency": "LKR ",
+        "shopName": "print"
+      }
+    }
+  }
+}

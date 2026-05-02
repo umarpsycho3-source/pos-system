@@ -1,0 +1,80 @@
+.barcode-preview-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #f1f5f9;
+  border-radius: var(--radius-md);
+  margin-top: 1rem;
+}
+
+.barcode-sticker {
+  background: white;
+  color: black;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.barcode-company {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.barcode-product-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barcode-lines {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.barcode-number {
+  margin: 0 0 0.5rem 0;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.barcode-price {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-area, .print-area * {
+    visibility: visible;
+  }
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .barcode-sticker {
+    box-shadow: none;
+    border: none;
+  }
+  .print-hide {
+    background: transparent;
+  }
+}
