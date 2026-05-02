@@ -1,6 +1,13 @@
 {
   "shops": [
     {
+      "id": "id-1777722308287-4kok51",
+      "code": "SHOID01",
+      "name": "Ulapane",
+      "pinHash": "$2b$10$ZbdJx3SgUV2J3BRuBC2iyezBOJXs8reCVBWJf6j8YeZiJMDS/wMXe",
+      "status": "active"
+    },
+    {
       "id": "id-1777717700382-md1usv",
       "code": "SHOID04",
       "name": "print",
@@ -229,6 +236,17 @@
       "settings": {
         "currency": "LKR ",
         "shopName": "print"
+      }
+    },
+    "id-1777722308287-4kok51": {
+      "products": [],
+      "customers": [],
+      "employees": [],
+      "sales": [],
+      "creditSales": [],
+      "settings": {
+        "currency": "LKR ",
+        "shopName": "Ulapane"
       }
     }
   }
